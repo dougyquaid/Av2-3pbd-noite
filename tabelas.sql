@@ -1,4 +1,4 @@
-2. Projeto Físico (DDL)
+-- 2. Projeto Físico (DDL)
 
 CREATE TABLE Cliente (
 id_cliente INT PRIMARY KEY AUTO_INCREMENT,
@@ -46,7 +46,7 @@ bandeira_cartao VARCHAR(20),
 FOREIGN KEY (id_reserva) REFERENCES Reserva(id_reserva)
 );
 
-3. Scripts de INSERT, UPDATE e DELETE
+-- 3. Scripts de INSERT, UPDATE e DELETE
 
 INSERT INTO Cliente (nome, email, telefone) VALUES ('João Silva', 'joao@email.com', '11999998888');
 UPDATE Cliente SET telefone = '11988887777' WHERE id_cliente = 1;
@@ -58,7 +58,7 @@ INSERT INTO Loja (nome, cidade, aeroporto) VALUES ('Loja Congonhas', 'São Paulo
 UPDATE Loja SET cidade = 'Guarulhos' WHERE id_loja = 1;
 DELETE FROM Loja WHERE id_loja = 1;
 
-4. Scripts de SELECT
+-- 4. Scripts de SELECT
 
 SELECT * FROM Cliente;
 SELECT * FROM Carro;
@@ -67,7 +67,7 @@ SELECT * FROM Reserva;
 SELECT * FROM Pagamento;
 SELECT * FROM Cliente WHERE id_cliente = 1;
 
-//5. Consulta de Carros Disponíveis e Reservados
+-- 5. Consulta de Carros Disponíveis e Reservados
 
 -- Carros disponíveis
 SELECT * FROM Carro
